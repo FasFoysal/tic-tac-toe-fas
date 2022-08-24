@@ -1,0 +1,193 @@
+* {
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* score  */
+
+.score {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+.xx {
+    width: 14vw;
+    height: 45px;
+    background: rgb(99, 158, 23);
+    margin-right: 5px;
+}
+
+.spa {
+    border-top: 4px solid cyan;
+}
+
+.oo {
+    width: 14vw;
+    height: 45px;
+    background: rgb(99, 158, 23);
+    margin-right: 5px;
+}
+
+#turn {
+    padding: 5px 0;
+}
+
+#turn2 {
+    padding: 5px 0;
+}
+
+
+/* box  */
+
+.container {
+    width: 58vw;
+    height: 40vw;
+    background-color: rgb(0, 0, 0, .3);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+}
+
+.border {
+    border: 2px solid rgb(11, 151, 58);
+}
+
+.border:hover {
+    background-color: rgb(148, 148, 229);
+}
+
+.box span {
+    font-size: 8vw;
+}
+
+.box div {
+    text-align: center;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+
+/* --- programing css--- */
+
+.xbtn {
+    display: none;
+}
+
+
+/* turn or reset  */
+
+.turn {
+    margin-right: 20px;
+}
+
+.reset {
+    width: max-content;
+    height: max-content;
+    background-color: rgb(222, 87, 87);
+    border: 2px solid brown;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.reset:hover {
+    background-color: brown;
+    border: 2px solid rgb(222, 87, 87);
+    color: rgba(255, 255, 255, 0.654);
+    border-radius: 3.5px;
+}
+
+.turn button {
+    padding: 4px;
+    background: yellowgreen;
+    color: aliceblue;
+    border: 1px solid green;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* --- futter ---  */
+
+.top {
+    padding: 10px;
+}
+
+.top a {
+    text-decoration: none;
+    color: rgb(64, 64, 235);
+    justify-content: center;
+}
+
+.top a:hover {
+    text-decoration: underline;
+}
+
+.top p {
+    width: max-content;
+    height: max-content;
+    background-color: aquamarine;
+}
+
+.animate {
+    animation: animatetop 0.4s
+}
+
+@keyframes animatetop {
+    from {
+        opacity: .1
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.winer {
+    height: 40vh;
+    background-color: blueviolet;
+    display: flex;
+    align-content: center;
+    padding: 20vh 0;
+    display: none;
+}
+
+.innerWiner {
+    margin: auto;
+}
+
+.innerWiner h3 {
+    font-size: 8vw;
+    margin: auto;
+    display: table;
+    color: aqua;
+    text-shadow: 2px 2px 5px #fff;
+}
+
+.innerWiner img {
+    width: 18vw;
+    display: inherit;
+    margin: auto;
+}

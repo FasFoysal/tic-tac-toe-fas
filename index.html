@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fas tic-tac-toe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="score">
+        <div class="xx ">
+            <h4 class="animate" id="turn"></h4>
+        </div>
+        <div class="oo ">
+            <h4 id="turn2">Now turn of: o</h4>
+        </div>
+    </div>
+    <!-- winer page -->
+    <div class="winer animate">
+        <div class="innerWiner">
+            <h3 id="winer">the winer is</h3>
+            <img src="sound/win.gif" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="turn">
+            <button onclick=location.reload()>Reset</button>
+
+        </div>
+        <div class="box animate">
+            <!-- <div class="tictac"></div> -->
+            <div class="border bt-0 bl-0">
+                <span id="addXO"></span>
+            </div>
+            <div class="border bt-0">
+                <span id="addXO"></span>
+            </div>
+            <div class="border bt-0 br-0">
+                <span id="addXO"></span>
+            </div>
+            <div class="border bl-0">
+                <span id="addXO"></span>
+            </div>
+            <div class="border ">
+                <span id="addXO"></span>
+            </div>
+            <div class="border br-0">
+                <span id="addXO"></span>
+            </div>
+            <div class="border bl-0 bb-0">
+                <span id="addXO"></span>
+            </div>
+            <div class="border bb-0">
+                <span id="addXO"></span>
+            </div>
+            <div class="border br-0 bb-0">
+                <span id="addXO"></span>
+            </div>
+        </div>
+    </div>
+    <!-- futter -->
+    <div class="top">
+        <p>Tic-Tac-Toe (Fas Foysal Ahmed Shoun) source code <a href="">Click...</a></p>
+    </div>
+
+    <!-- javaScript file  -->
+    <script src="script/coustom.js"></script>
+</body>
+
+</html>
